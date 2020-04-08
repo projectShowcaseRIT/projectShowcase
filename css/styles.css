@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* custom typefaces
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+*/
+
+body {
+  background-color: black;
+}
+
+#ribbon {
+  color: white;
+}
+
+#dhss_logo {
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .10;
+}
+
+#navbar {
+  margin: auto;
+  position: absolute;
+  top: 10vh;
+  overflow: hidden;
+  width: 100vw;
+}
+
+#navbar_content {
+  margin: auto;
+  max-width: 90%;
+  font-size: 150%;
+}
+
+#navbar_left {
+  float: left;
+}
+
+#navbar_right {
+  float: right;
+}
+
+a {
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+#feature_card {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  height: 40vh;
+  width: 40vw;
+  background-color: white;
+  border-radius: 40px;
+}
+
+#feature_card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: inherit;
+}
+
+#short_desc {
+  background-color: #EFEEEE;
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  border-radius: inherit;
+  padding: 2.5% 5%;
+  box-sizing: border-box;
+}
+
+#short_desc h3 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 200%;
+}
+
+#short_desc p {
+  padding-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#gradient_overlay {
+  background: linear-gradient(rgba( 255, 255, 255, 0 ), rgba(239, 238, 238, 1));
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  border-radius: inherit;
+}
