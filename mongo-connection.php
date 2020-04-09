@@ -9,6 +9,11 @@
   $db = $client->showcase;
   $collection = $db->projects;
   $document = $collection->findOne();
+  $feature = iterator_to_array($document);
+
+  //$title = $feature['title'];
+  //$short_desc = $feature['short_desc'];
+  //$image = $feature['image'];
 
   highlight_string("<?php\n\$data =\n" . var_export($document, true) . ";\n?>");
 ?>
