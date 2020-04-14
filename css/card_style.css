@@ -1,0 +1,59 @@
+.card {
+  position: absolute;
+  /* top: 40%;
+  right: 10vw; */
+  height: 40vh;
+  width: 35vw;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: inherit;
+}
+
+.short_desc {
+  background-color: #EFEEEE;
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  border-radius: inherit;
+  padding: 2.5% 5%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.short_desc h3 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 200%;
+}
+
+.short_desc p {
+  padding-top: 2%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.gradient_overlay {
+  background: linear-gradient(rgba( 255, 255, 255, 0 ), rgba(239, 238, 238, 1));
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.read_more {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 150%;
+}
+
+/* Modal Start */

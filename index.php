@@ -12,6 +12,7 @@
 
     <!--[stylesheet]-->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/card_style.css">
 
     <!--[typefaces]-->
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&display=swap" rel="stylesheet">
@@ -43,19 +44,23 @@
     <!--[ribbon end]-->
 
     <!--[feature card start]-->
-    <div id="feature_card">
-      <?php
-        $path = './';
-        include $path.'php/card.php'
-      ?>
-      <img src="<?php echo $image?>" alt="placeholder">
-      <div id="short_desc">
-        <h3><?php echo $title ?></h3>
-        <p><?php echo $short_desc ?></p>
+    <div class="card_container">
+      <div class="card">
+        <?php
+          $path = './';
+          include $path.'php/card.php'
+        ?>
+        <img src="<?php echo $image?>" alt="placeholder">
+        <div class="short_desc">
+          <h3><?php echo $title ?></h3>
+          <p><?php echo $short_desc ?></p>
+        </div>
+        <div class="gradient_overlay"></div>
+        <button class="read_more">Read More</button>
       </div>
-      <div id="gradient_overlay"></div>
     </div>
     <!--[feature card end]-->
+
     <script src="js/scripts.js"></script>
   </body>
 </html>
