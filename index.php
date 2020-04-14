@@ -17,6 +17,12 @@
     <!--[typefaces]-->
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&display=swap" rel="stylesheet">
 
+    <style>
+      .card {
+        top: 40vh;
+        right: 10vw;
+      }
+    </style>
   </head>
 
   <body>
@@ -44,23 +50,20 @@
     <!--[ribbon end]-->
 
     <!--[feature card start]-->
-    <div class="card_container">
-      <div class="card">
-        <?php
-          $path = './';
-          include $path.'php/card.php'
-        ?>
-        <img src="<?php echo $image?>" alt="placeholder">
-        <div class="short_desc">
-          <h3><?php echo $title ?></h3>
-          <p><?php echo $short_desc ?></p>
-        </div>
-        <div class="gradient_overlay"></div>
-        <button class="read_more">Read More</button>
+    <div id="card_container">
+      <?php
+        $path = './';
+        include $path.'php/card.php'
+      ?>
+
+      <div id="modal_content">
+        <img id="img01"/>
+        <p id="long_desc"></p>
       </div>
+
     </div>
     <!--[feature card end]-->
 
-    <script src="js/scripts.js"></script>
+    <script src="js/modal_script.js"></script>
   </body>
 </html>

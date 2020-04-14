@@ -1,6 +1,6 @@
 .card {
   position: absolute;
-  /* top: 40%;
+  /* top: 40vh;
   right: 10vw; */
   height: 40vh;
   width: 35vw;
@@ -57,3 +57,16 @@
 }
 
 /* Modal Start */
+#modal_content {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  width: 90%;
+  height: 90%;
+  background-color: #EFEEEE;
+  border-radius: 40px;
+}
