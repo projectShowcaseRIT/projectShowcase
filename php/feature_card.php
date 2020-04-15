@@ -1,7 +1,7 @@
 <div onclick="onClick(this)" class="card">
   <?php
     $path = './';
-    include $path.'php/card_info.php'
+    include $path.'php/random_card_info.php'
   ?>
   <img src="<?php echo $image?>" alt="placeholder">
   <div class="short_desc">

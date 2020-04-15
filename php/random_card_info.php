@@ -8,20 +8,31 @@
 
   $db = $client->showcase;
   $collection = $db->projects;
-  $document = $collection->findOne();
-  //$document = $collection->aggregate([{ $sample: {size: 1} }]);
-  $feature = iterator_to_array($document);
 
+  //choose a random document from the collection
+  $count = $collection->count();
+  $randomDocumentId = rand(1, $count);
+
+  $document = $collection->find( [ "_id" => $randomDocumentId ] );
+  //$document = $collection->aggregate([{ $sample: {size: 1} }]); (syntax error)
+  $feature = iterator_to_array($document)[0];
+
+  //$feature = $document->toArray(); (failed method)
+
+  //$title = $feature->title (this method also works);
   $title = $feature['title'];
   $short_desc = $feature['short_desc'];
   $image = $feature['image'];
   $long_desc = $feature['long_desc'];
 
+
+  //
+
   //echo $title;
   //echo $short_desc;
   //echo $image;
 
-  /* highlight_string("<?php\n\$data =\n" . var_export($document, true) . ";\n?>"); */
+  /* highlight_string("<?php\n\$data =\n" . var_export($feature, true) . ";\n?>"); */
   //var_dump($document);
   //print_r($feature['short_desc']);
 ?>

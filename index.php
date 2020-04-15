@@ -53,7 +53,7 @@
     <div id="card_container">
       <?php
         $path = './';
-        include $path.'php/card.php'
+        include $path.'php/feature_card.php'
       ?>
 
       <div id="modal_content">
