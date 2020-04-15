@@ -33,7 +33,7 @@
     <div id="navbar">
       <div id="navbar_content">
         <div id="navbar_left">
-          <a href="#home">Home</a>
+          <a href="#home">Homepage</a>
         </div>
         <div id="navbar_right">
           <a href="#project">Projects</a>
