@@ -33,7 +33,7 @@
     <div id="navbar">
       <div id="navbar_content">
         <div id="navbar_left">
-          <a href="#home">Homepage</a>
+          <a href="#home">Home</a>
         </div>
         <div id="navbar_right">
           <a href="#project">Projects</a>
@@ -58,7 +58,8 @@
 
       <div id="modal_content">
         <img id="img01"/>
-        <p id="long_desc"></p>
+        <p id="long_desc"><?php echo $long_desc ?></p>
+        <h3 id="title"><?php echo $title ?></h3>
       </div>
 
     </div>
