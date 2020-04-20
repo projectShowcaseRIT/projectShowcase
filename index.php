@@ -22,6 +22,10 @@
         top: 40vh;
         right: 15vw;
       }
+
+      body {
+        overflow-y: hidden;
+      }
     </style>
   </head>
 
@@ -47,13 +51,21 @@
     <div id="card_container">
       <?php
         $path = './';
-        include $path.'php/feature_card.php'
+        include $path.'php/random_card_info.php';
+        include $path.'php/card.php';
+
+        foreach($collection as $element){
+          $title = $element->title;
+          $short_desc = $element->short_desc;
+          $image = $element->image;
+          $long_desc = $element->long_desc;
+          echo createCard($title, $short_desc, $image, $long_desc);
+        }
       ?>
 
       <div id="modal_content">
         <img id="img01"/>
-        <p id="long_desc"><?php echo $long_desc ?></p>
-        <h3 id="title"><?php echo $title ?></h3>
+        <p id="long_desc"></p>
       </div>
 
     </div>
