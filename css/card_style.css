@@ -75,6 +75,17 @@ h3 {
   border-radius: 40px;
 }
 
+#modal_content img {
+  border-radius: inherit;
+  margin: 0 auto;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 90vh;
+  object-fit: cover;
+}
+
 #modal_content h3 {
   text-align: center;
 }
@@ -83,12 +94,12 @@ img {
   border-radius: inherit;
   margin: 0 auto;
   max-width: 100%;
-  max-height: 100%;
 }
 
 #modal_content p {
   font-family: 'Montserrat', sans-serif;
   padding: 5%;
+  padding-bottom: 0;
   overflow: scroll;
   overflow-x: hidden;
   grid-row-start: 1;

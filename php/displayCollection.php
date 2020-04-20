@@ -9,11 +9,10 @@
     $image = $element->image;
     $long_desc = $element->long_desc;
     echo createCard($title, $short_desc, $image, $long_desc);
-  } 
+  }
 ?>
 
 <div id="modal_content">
   <img id="img01"/>
   <p id="long_desc"></p>
-  <h3 id="title"></h3>
 </div>
