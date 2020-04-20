@@ -1,9 +1,10 @@
 .card {
   position: absolute;
+  min-width: 25em;
   /* top: 40vh;
   right: 10vw; */
   height: 40vh;
-  width: 35vw;
+  width: 30vw;
   background-color: white;
   border-radius: 40px;
 }
@@ -95,9 +96,7 @@ img {
   grid-column-end: 3;
 }
 
-/*
- *  STYLE 2
- */
+/* scrollbar styling */
 
 ::-webkit-scrollbar-track
 {

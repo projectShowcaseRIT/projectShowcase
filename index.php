@@ -20,7 +20,7 @@
     <style>
       .card {
         top: 40vh;
-        right: 10vw;
+        right: 15vw;
       }
     </style>
   </head>
@@ -30,16 +30,10 @@
     <img id="dhss_logo" src="images/dhss_logo_grey.png" alt="DHSS Logo"/>
 
     <!--[navigation bar start]-->
-    <div id="navbar">
-      <div id="navbar_content">
-        <div id="navbar_left">
-          <a href="#home">Home</a>
-        </div>
-        <div id="navbar_right">
-          <a href="#project">Projects</a>
-        </div>
-      </div>
-    </div>
+    <?php
+      $path = './';
+      include $path.'php/navigation.php'
+    ?>
     <!--[navigation bar end]-->
 
     <!--[ribbon start]-->
