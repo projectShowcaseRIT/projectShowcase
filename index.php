@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Project Showcase</title>
     <meta name="description" content="Project Showcase">
@@ -14,17 +15,27 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/card_style.css">
 
+    <!--[mobile stylesheet]-->
+    <link rel="stylesheet" href="css/mobile.css">
+
     <!--[typefaces]-->
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&display=swap" rel="stylesheet">
 
     <style>
-      .card {
+      #card_container {
+        position: absolute;
         top: 40vh;
-        right: 15vw;
+        left: 50%;
+        height: 100%;
+        width: 100%;
       }
 
-      body {
-        overflow-y: hidden;
+      @media screen and (max-width: 930px) {
+        #card_container {
+          display: flex;
+          left: 0;
+          justify-content: center;
+        }
       }
     </style>
   </head>

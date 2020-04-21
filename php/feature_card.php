@@ -1,3 +1,5 @@
+//discontinued; no longer in use
+
 <?php
   function createCard($title, $short_desc, $image, $long_desc)
   { ob_start(); ?>

@@ -1,6 +1,6 @@
 .card {
   position: absolute;
-  min-width: 25em;
+  min-width: 23em;
   /* top: 40vh;
   right: 10vw; */
   height: 40vh;
@@ -99,13 +99,17 @@ img {
 #modal_content p {
   font-family: 'Montserrat', sans-serif;
   padding: 5%;
-  padding-bottom: 0;
+  padding-bottom: 5%;
   overflow: scroll;
   overflow-x: hidden;
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
+}
+
+#close_button {
+  display: none;
 }
 
 /* scrollbar styling */

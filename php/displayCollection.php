@@ -15,4 +15,5 @@
 <div id="modal_content">
   <img id="img01"/>
   <p id="long_desc"></p>
+  <span id="close_button">&times;</span>
 </div>
