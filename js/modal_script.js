@@ -14,6 +14,12 @@ window.onclick = function(event) {
   }
 }
 
+window.onclick = function(event) {
+  if (event.target == navigation_offset){
+    modal_content.style.display = "none";
+  }
+}
+
 var btn = document.getElementById("close_button");
 btn.onclick = function() {
   console.log("button clicked")
