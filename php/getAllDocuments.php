@@ -10,8 +10,8 @@
   $collection = $db->projects;
 
   //choose a random document from the collection
-  $count = $collection->count();
-  $randomDocumentId = rand(1, $count);
+  //$count = $collection->count();
+  //$randomDocumentId = rand(1, $count);
 
   $document = $collection->find();
   //$document = $collection->aggregate([{ $sample: {size: 1} }]); (syntax error)
